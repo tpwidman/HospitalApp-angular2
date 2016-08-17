@@ -4,7 +4,7 @@ import {ContainerComponent} from './container.component'
     selector: 'hospital-app',
     template: '<h1>Hello world!</h1><container></container>',
     directives: [
-        
+        ContainerComponent
     ]
 })
 export class AppComponent{}

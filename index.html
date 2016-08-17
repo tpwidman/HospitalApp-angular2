@@ -10,10 +10,10 @@
     <nav class="navbar" role="navigation">
         <a href="#" class="brand">Joe Patient</a>
 		<ul class="nav">
-			<li><a ui-sref="home">Home</a></li>
-			<li><a ui-sref="about">About</a></li>
-			<li><a ui-sref="contact">Contact</a></li>
-			<li><a ui-sref="blog">Blog</a></li>
+			<li><a>Home</a></li>
+			<li><a>About</a></li>
+			<li><a>Contact</a></li>
+			<li><a>Blog</a></li>
 		</ul>
     </nav>
 
@@ -31,11 +31,29 @@
 	</ul>
 </div>
 
-<!-- Angular stuff -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
-	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-	<script src="app.js"></script>
+<!-- Angular 2 stuff -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+<!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+	
 </body>
 
 </html>
