@@ -19,6 +19,7 @@
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3"
   },
+  
   "devDependencies": {
     "concurrently": "^2.0.0",
     "less": "^2.7.1",
