@@ -1,36 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title ng-bind="title"></title>
+	<title ng-bind="title"></title>
 <!-- Stylesheets -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	</head>
-<body ng-app="joeApp">
-    <nav class="navbar" role="navigation">
-        <a href="#" class="brand">Joe Patient</a>
-		<ul class="nav">
-			<li><a>Home</a></li>
-			<li><a>About</a></li>
-			<li><a>Contact</a></li>
-			<li><a>Blog</a></li>
-		</ul>
-    </nav>
-
-<!-- Main app -->
-<div class="container">
-	<div ui-view></div>
-</div>
-
-<!-- Footer -->
-<div class="footer">
-	<ul class="nav bottom-nav">
-		<li><a href="tel:+1-"><i class="fa fa-phone"></i></a></li>
-		<li><a href="mailto:help@joepatient.com" role="email"><i class="fa fa-envelope"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/stevemakela"><i class="fa fa-linkedin"></i></a></li>
-	</ul>
-</div>
-
 <!-- Angular 2 stuff -->
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
@@ -53,7 +28,8 @@
       System.import('app/boot')
             .then(null, console.error.bind(console));
     </script>
-	
+<!-- Main App -->
+<myapp>Loading...</myapp>
 </body>
 
 </html>
