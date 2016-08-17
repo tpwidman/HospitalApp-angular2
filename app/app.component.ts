@@ -8,7 +8,7 @@ import {BlogComponent} from './blog/blog.component'
 
 @Component({
     selector: 'hospital-app',
-    template: require('/home/home.html'),
+    template: require('/home/home.component.html'),
     styles: [require('/styles/styles.css')]
     directives: [
         ROUTER_DIRECTIVES
