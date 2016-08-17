@@ -1,0 +1,23 @@
+<div class="jumbotron text-center">
+    <h1>Home Page</h1>
+    <p>This page demonstrates <span class="text-danger">nested</span>views.</p>
+    <a ui-sref=".list" class="btn btn primary">List</a>
+    <a ui-sref=".paragraph" class="btn btn-danger">Paragraph</a>
+    <!--<div class="inputs">
+        <p>What hurts?</p>
+        <select ng-model="selectedPart">
+            <option ng-repeat="part in parts" value="{{part.model}}">{{part.model}}</option>
+        </select>
+        <h1>Results for:{{selectedPart}}</h1>
+        <h4>within: {{mile}} miles</h4>
+    </div>
+    <div class="container">
+        <div ng-contoller="color">
+            <ul>
+                <li ng-repeat="hospital in hospitals | filter : color">
+                </li>
+            </ul>
+        </div>
+    </div>-->
+</div>
+<div ui-view></div>
