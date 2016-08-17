@@ -1,14 +1,27 @@
 import {Component} from 'angular2/core';
-import {ContainerComponent} from './container.component'
+import {RouteConfig} from 'angular2/router';
+import {ContainerComponent} from './container.component';
+
+import {HomeComponent} from './home.component';
+import {AboutComponent} from './about.component';
+import {ContactComponent} from './contact.component'
+
+@RouteConfig([
+    { path: '/home', name:'Home', component:HomeComponent, useAsDefault: true},
+    { path: '/about', name:'About', component:AboutComponent},
+    { path: '/contact', name:'Contact', component:ContactComponent},
+    { path: '/*other', name:'Other', redirectTo: ['Home'] }
+])
+
 @Component({
     selector: 'hospital-app',
-    template: '<h1>Hello world!</h1><container></container>',
+    templateURL: '/home/home.html',
     directives: [
         ContainerComponent
     ]
 })
 export class AppComponent{
-    
+
 }
 
 

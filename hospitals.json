@@ -1,32 +1,40 @@
 [
+    { "green": [
             {
-                "id": 1,
-                "name": "Baptist",
-                "distance": 4.5,
-                "expertise": 1.83,
-                "cost": 7956,
-                "address": "",
-                "phone": "",
-                "color":"green"
-            },
-            {
-                "id": 2,
-                "name": "Middle",
-                "distance":14.7,
-                "expertise": 1.15,
-                "cost": 6623,
-                "address":"",
-                "phone": "",
-                "color":"yellow"
-            },
-            {
-                "id": 3,
-                "name": "Sumner",
-                "distance": 7.7,
-                "expertise":1.04,
-                "cost":8662,
-                "address":"",
-                "phone": "",
-                "color": "red"
+            "id": 1,
+            "name": "Baptist",
+            "distance": 4.5,
+            "expertise": 1.83,
+            "cost": 7956,
+            "address": "",
+            "phone": ""
             }
+        ]
+    },
+
+    { "yellow": [
+            {
+            "id": 2,
+            "name": "Middle",
+            "distance":14.7,
+            "expertise": 1.15,
+            "cost": 6623,
+            "address":"",
+            "phone": ""
+            }
+        ]
+    },
+
+    { "red" : [
+            {
+            "id": 3,
+            "name": "Sumner",
+            "distance": 7.7,
+            "expertise":1.04,
+            "cost":8662,
+            "address":"",
+            "phone": ""
+            }
+        ]
+    }
 ]
