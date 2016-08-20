@@ -11,23 +11,29 @@
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
 
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/angular2/angular2-polyfills.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
-	<script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/rxjs/Rx.js"></script>
+    <script src="node_modules/angular2/angular2.dev.js"></script>
+	<script src="node_modules/angular2/router.dev.js"></script>
 <!-- 2. Configure SystemJS -->
+<!--This tells Angular where the app is and to transpile the typescript;-->
 <script>
   System.config({
+    transpiler: 'typescript'
+    typescriptOptions:{
+      emitDecoratorMetadata: true
+    },
     packages: {        
       app: {
-        format: 'register',
-        defaultExtension: 'js'
+        main: './main.ts',
+        defaultExtension: 'ts'
       }
     }
   });
   System.import('app/boot')
         .then(null, console.error.bind(console));
+        .catch(console.error.bind(console));
 </script>
 <!-- Main App -->
 <myapp>Loading...</myapp>
