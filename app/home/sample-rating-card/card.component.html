@@ -1,0 +1,7 @@
+<li *ngFor="#hospital of ('hospitals.json | fetch')">
+    <h2>{{ hospital.name }}</h2>
+    <p>{{ hospital.distance }}</p>
+    <p>{{ hospital.expertise }}</p>
+    <p>{{ hospital.address }}</p>
+    <p>{{ hospital.phone }}</p>
+</li>
