@@ -1,4 +1,4 @@
-export interface IHospital{
+export class IHospital{
     id: number;
     name: string;
     distance: number;

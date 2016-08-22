@@ -2,11 +2,12 @@ import {Component} from '@angular/core';
 import {Routes, ROUTER_DIRECTIVES} from '@angular/router';
 
 import {HomeComponent} from './home/home.component';
-// import {CardComponent} from './home/sample-rating-card/card.component'
 import {AboutComponent} from './about/about.component';
 import {ContactComponent} from './contact/contact.component';
 import {BlogComponent} from './blog/blog.component';
-// import {DetailComponent} from './blog/blog-details/blog-detail.component'
+
+import{CardService} from './home/sample-rating-card/card.component.service';
+import{BlogService} from './blog/blog-details/blog.detail.service';
 
 @Component({
     selector: 'app',
@@ -16,6 +17,7 @@ import {BlogComponent} from './blog/blog.component';
                 </div>`,
     styles: [('/styles/styles.css')],
     directives: [ROUTER_DIRECTIVES],
+    providers:[CardService, BlogService]
 })
 @Routes([
     { path: '/home', name:'Home',       component:HomeComponent, useAsDefault: true },

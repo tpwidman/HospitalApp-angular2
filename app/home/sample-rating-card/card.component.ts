@@ -4,8 +4,10 @@ import{FetchJsonPipe} from './fetch-json.pipe';
 
 @Component({
     selector:'hospital-list',
-    templateUrl:'card.component.html',
-    pipes:[FetchJsonPipe]
+    templateUrl:'app/home/sample-rating-card/card.component.html',
+    styleUrls:['app/home/sample-rating-card/card.component.css'],
+    pipes:[FetchJsonPipe],
+    directives:[]
 })
 class CardComponent{
     heading = 'Hospital Information'

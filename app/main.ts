@@ -10,9 +10,5 @@ import { APP_ROUTER_PROVIDERS } from './app.routes';
 // } catch (error) {
     
 // }(err => console.error(err));
-@Component({
-    selector:'my-app',
-    template:'<h1>Racing</h2>'
-})
 class AppComponent{}
 bootstrap(AppComponent)
