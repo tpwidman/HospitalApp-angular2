@@ -1,6 +1,7 @@
 // Import component decorator
 import { Component } from '@angular/core';
 import{FetchJsonPipe} from './fetch-json.pipe';
+import { CardService } from './card.service';
 
 @Component({
     selector:'hospital-list',
@@ -13,6 +14,13 @@ class CardComponent{
     heading = 'Hospital Information'
     
 }
-export class CardDetailComponent{}
+export class CardDetailComponent{
+    cardDetails: CardDetails[];
+
+    constructor(private cardService: CardService) {}
+    ngOnInit() {
+        this.cardDetails = this.cardService.getcardDetails();
+    }
+}
 
 

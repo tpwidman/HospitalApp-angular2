@@ -6,7 +6,7 @@ import {AboutComponent} from './about/about.component';
 import {ContactComponent} from './contact/contact.component';
 import {BlogComponent} from './blog/blog.component';
 
-import{CardService} from './home/sample-rating-card/card.component.service';
+import{CardService} from './home/sample-rating-card/card.service';
 import{BlogService} from './blog/blog-details/blog.detail.service';
 
 @Component({
