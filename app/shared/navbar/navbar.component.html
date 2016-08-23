@@ -1,5 +1,17 @@
-<nav>
-    <a href=""></a>
-    <a href="['/about']"></a>
-    <!--etc-->
-</nav>
+<header id="header">
+  <h1> Home
+    <a [routerLink]="['/Home']"></a>
+  </h1>
+
+  <div id="menu">
+    <a [routerLink]="['/home']" class="btn">Home</a>
+    <a [routerLink]="['/about']" class="btn">About</a>
+    <a [routerLink]="['/contact']" class="btn">Contact</a>
+    <a [routerLink]="['/blog']" class="btn">Blog</a>
+  </div>
+
+</header>
+
+<div id="container">
+  <router-outlet></router-outlet>
+</div>
