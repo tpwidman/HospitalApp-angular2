@@ -9,11 +9,11 @@ import {BlogComponent} from './blog/blog.component';
 
 // Route Configuration
 export const routes: RouterConfig = [
-    { path: '/home', name: 'Home',       component:HomeComponent, useAsDefault: true},
-    { path: '/about', name:'About',     component: AboutComponent },
-    { path: '/contact', name:'Contact', component: ContactComponent },
-    { path: '/blog', name: 'Blog',      component: BlogComponent },
-    { path: '/*other', name:'Other',    redirectTo: ['Home'] }
+    { path: '/home',    component:HomeComponent, useAsDefault: true},
+    { path: '/about',   component: AboutComponent },
+    { path: '/contact', component: ContactComponent },
+    { path: '/blog',    component: BlogComponent },
+    { path: '/*other',  redirectTo: ['Home'] }
 ]
 
 // Export routes
