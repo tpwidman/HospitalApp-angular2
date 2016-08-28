@@ -1,7 +1,10 @@
 import {Injectable} from '@angular/core'
 
-@Injectable(){
+@Injectable()
 
     
+export class DetailService{
+    getDetails(){
+
+    }
 }
-export BlogService{}

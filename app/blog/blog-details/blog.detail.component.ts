@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { Injectable } from '@angular/core';
-import { BlogService } from './blog.details.service'
+import { DetailService } from './blog.detail.service'
 // Import component decorator
 @Component ({
-    template: `<h2>Blog Detail</h2>`
+    template: 'blog.detail.component'
 })
 @Injectable()
 
@@ -11,8 +11,8 @@ import { BlogService } from './blog.details.service'
 export class DetailComponent{
     blogDetails: BlogDetails[];
 
-    constructor(private blogService: BlogService) {}
+    constructor(private blogService: DetailService) {}
     ngOnInit() {
-        this.blogDetails = this.blogService.getblogDetails();
+        this.blogDetails = this.blogService.getDetails();
     }
 }
