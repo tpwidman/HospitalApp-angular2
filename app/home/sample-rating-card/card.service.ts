@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+
 @Injectable()
 
 export class CardService{
@@ -11,7 +12,6 @@ export class CardService{
     }
 
     getHospitals(){
-        return this.http.get('hospitals.json')
-                   .map(response => Hospital[]response.json().data);
+        return this.http.get('hospitals.json');
     }
 }
